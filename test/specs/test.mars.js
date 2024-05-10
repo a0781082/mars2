@@ -14,8 +14,6 @@ describe('Deque Candidate Automation Tests', () => {
 
     it('and gather the accessibility scan results', async () => {
         const builder = new AxeBuilder({ client: browser })
-        await browser.url(`https://dequeuniversity.com/demo/mars`)
-
         const result = await builder.analyze()
         console.log('Acessibility Results:', result)
     })
