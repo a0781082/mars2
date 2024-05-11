@@ -16,6 +16,7 @@ describe('Deque Candidate Automation Tests', () => {
         const builder = new AxeBuilder({ client: browser })
         const result = await builder.analyze()
         console.log('Acessibility Results:', result)
+        strictEqual(result.violations.length, true, "Accessibility Issues Found")
     })
 
 })
